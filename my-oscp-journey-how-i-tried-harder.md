@@ -109,6 +109,8 @@ Hey, you paid for them, so you might as well use them. Start with the 11 machine
 
 [Offensive Security Proving Grounds](https://www.offensive-security.com/labs/) is a platform for virtual pentesting labs, **made by Offsec**. As a result, the machines there are quite similar to what you might expect in the OSCP exam.
 
+{% embed url="https://www.offensive-security.com/labs/" %}
+
 #### The Good
 
 The machines, especially those made by Offsec, are extremely realistic and are "OSCP-like". They are also grouped into 10, 20, and 25 point machines, just like the OSCP. 
