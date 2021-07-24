@@ -10,7 +10,7 @@ description: >-
 
 Last week, I sat for and passed the Offensive Security Certified Professional \(OSCP\) exam from Offensive Security. I managed to root 4 out of 5 of the boxes, and achieve 90 out of 100 possible points \(70 were required to pass\).
 
-![OSCP Exam Results](.gitbook/assets/screenshot-2021-07-11-at-7.18.42-pm.png)
+![OSCP Exam Results](../.gitbook/assets/screenshot-2021-07-11-at-7.18.42-pm.png)
 
 As a newcomer in the field of penetration testing, this was a major milestone for me. This post outlines my experience with the [Penetration Testing with Kali Linux \(PWK\)](https://www.offensive-security.com/pwk-oscp/) course and the OSCP exam, as well as some advice I wish I had been given before embarking on this journey.
 
@@ -28,7 +28,7 @@ If you're like me and just starting out in this field, I highly recommend TryHac
 
 Here are the rooms I did:
 
-![TryHackMe Rooms](.gitbook/assets/screenshot-2021-07-11-at-8.32.41-pm.png)
+![TryHackMe Rooms](../.gitbook/assets/screenshot-2021-07-11-at-8.32.41-pm.png)
 
 Start with the easy rooms like Vulnversity \(which will take you through the basics of pentesting methodology\), then as you get more comfortable, try to take on rooms like Mr. Robot CTF and perform a full "pentest". You can always watch the walkthroughs if you get stuck - don't worry about referring to hints and reading walkthroughs at this early stage in your learning. What's important here is not really the technical skills, but rather getting a feel for the _methodology_ and _process_ of performing a penetration test.
 
@@ -51,7 +51,7 @@ Most importantly, it makes sure you fully understand the penetration testing **m
 
 I passed the certification on the 29th of January, a few weeks after I started the course.
 
-![eJPT Certificate](.gitbook/assets/ejpt-certificate.jpg)
+![eJPT Certificate](../.gitbook/assets/ejpt-certificate.jpg)
 
 ### Misc
 
@@ -136,11 +136,11 @@ Some helpful resources that I found myself regularly referring to:
 * [PayloadsAllTheThings Reverse Shell Cheatsheet](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md): Use a payload from here when you discover an RCE vulnerability.
 * [HackTricks](https://book.hacktricks.xyz): When you are dealing with unfamiliar protocols, HackTricks probably has a checklist for you.
 
-![](.gitbook/assets/screenshot-2021-07-11-at-9.39.24-pm.png)
+![](../.gitbook/assets/screenshot-2021-07-11-at-9.39.24-pm.png)
 
 * [ExploitDB](https://www.exploit-db.com/): Pretty much all the CVEs you come across during the PWK labs will have an exploit on here.
 
-![](.gitbook/assets/screenshot-2021-07-11-at-9.44.45-pm.png)
+![](../.gitbook/assets/screenshot-2021-07-11-at-9.44.45-pm.png)
 
 * [GTFOBins](https://gtfobins.github.io/): When performing Linux privilege escalation, you will likely find yourself referring to this for SUID and Sudo misconfiguration exploits.
 * [LinPEAS and WinPEAS](https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite): Great for privilege escalation enumeration, but don't forget your basics!
@@ -168,7 +168,7 @@ My second attempt was on 6th July - this time, I managed to root all but one of 
 
 Less than 24 hours after I submitted my exam report, I received confirmation that I have passed the exam. I'm officially an OSCP.
 
-![OSCP Certificate](.gitbook/assets/offensive_security_certified_professional__oscp__badge20210708-58-18xyxs1.jpg)
+![OSCP Certificate](../.gitbook/assets/offensive_security_certified_professional__oscp__badge20210708-58-18xyxs1.jpg)
 
 ## Misc Tips
 
@@ -178,7 +178,7 @@ Don't underestimate this. You've spent 24 hours pwning the boxes - make sure you
 
 I used [whoisflynn's template](https://github.com/noraj/OSCP-Exam-Report-Template-Markdown/blob/master/src/OSCP-exam-report-template_whoisflynn_v3.2.md), but modified it slightly for my style of reporting. For the styling, I used [chvancooten's template](https://github.com/chvancooten/OSCP-MarkdownReportingTemplates) to generate neat-looking reports from the Markdown document.
 
-![Example Report](.gitbook/assets/screenshot-2021-07-11-at-11.21.18-pm.png)
+![Example Report](../.gitbook/assets/screenshot-2021-07-11-at-11.21.18-pm.png)
 
 When working on the machines, screenshot every major milestone. **Make sure that someone else can easily replicate the attack by following your screenshots**. If it's clear and easily replicable, I bet that Offsec would have a much easier time grading your report too. If you miss out details in your report, Offsec may have to ask you for additional information etc., which can slow down the grading process or even result in a fail.
 
@@ -196,7 +196,7 @@ I'm glad that this chapter of my life has finally come to a satisfying conclusio
 
 Perhaps the best thing I've gained from this is that hacking no longer feels like a mystery to me. It is certainly not what it looks like on TV:
 
-![Castle \(TV Series\)](.gitbook/assets/screenshot-2021-07-11-at-11.30.08-pm.png)
+![Castle \(TV Series\)](../.gitbook/assets/screenshot-2021-07-11-at-11.30.08-pm.png)
 
 To be honest, I don't feel much different now that I have the certification. The course has taught me a lot, and I've seen my skills improve in not just the OSCP exam, but also in CTFs and understanding the mindset of an attacker in general. If I had failed again, at the very least I would know that I've improved a lot since my last attempt.
 

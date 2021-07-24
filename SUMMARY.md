@@ -1,7 +1,10 @@
 # Table of contents
 
 * [Zeyu's Pentesting Writeups](README.md)
-* [My OSCP Journey: How I Tried Harder](my-oscp-journey-how-i-tried-harder.md)
+
+## Blog Posts
+
+* [My OSCP Journey: How I Tried Harder](blog-posts/my-oscp-journey-how-i-tried-harder.md)
 
 ## Proving Grounds
 

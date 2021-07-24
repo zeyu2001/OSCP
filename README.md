@@ -14,7 +14,7 @@ There are many platforms that offer virtual penetration testing labs. I publish 
 
 | Name | Type |
 | :--- | :--- |
-| [My OSCP Journey: How I Tried Harder](my-oscp-journey-how-i-tried-harder.md) | Blog Post |
+| [My OSCP Journey: How I Tried Harder](blog-posts/my-oscp-journey-how-i-tried-harder.md) | Blog Post |
 | [Proving Grounds - Offensive Security](./#cd-proving_grounds) | Challenge Writeups |
 | [Hack the Box](./#cd-hack_the_box) | Challenge Writeups |
 
