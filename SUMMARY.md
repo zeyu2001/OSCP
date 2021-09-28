@@ -1,6 +1,9 @@
 # Table of contents
 
 * [Zeyu's Pentesting Writeups](README.md)
+* [Home](https://infosec.zeyu2001.com/)
+* [CTF Writeups](https://ctf.zeyu2001.com/)
+* [My Vulnerable Website](https://learn.zeyu2001.com/)
 
 ## Blog Posts
 
