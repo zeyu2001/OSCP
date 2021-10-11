@@ -8,17 +8,17 @@ description: >-
 
 ## Background
 
-Last week, I sat for and passed the Offensive Security Certified Professional \(OSCP\) exam from Offensive Security. I managed to root 4 out of 5 of the boxes, and achieve 90 out of 100 possible points \(70 were required to pass\).
+Last week, I sat for and passed the Offensive Security Certified Professional (OSCP) exam from Offensive Security. I managed to root 4 out of 5 of the boxes, and achieve 90 out of 100 possible points (70 were required to pass).
 
-![OSCP Exam Results](../.gitbook/assets/screenshot-2021-07-11-at-7.18.42-pm.png)
+![OSCP Exam Results](<../.gitbook/assets/Screenshot 2021-07-11 at 7.18.42 PM.png>)
 
-As a newcomer in the field of penetration testing, this was a major milestone for me. This post outlines my experience with the [Penetration Testing with Kali Linux \(PWK\)](https://www.offensive-security.com/pwk-oscp/) course and the OSCP exam, as well as some advice I wish I had been given before embarking on this journey.
+As a newcomer in the field of penetration testing, this was a major milestone for me. This post outlines my experience with the [Penetration Testing with Kali Linux (PWK)](https://www.offensive-security.com/pwk-oscp/) course and the OSCP exam, as well as some advice I wish I had been given before embarking on this journey.
 
 ## Pre-PWK
 
 I'm a high school graduate and an incoming Computer Science undergraduate.
 
-While I had prior experience in programming and Computer Science, my first encounter with red teaming came in January, when I decided to try out [TryHackMe](https://tryhackme.com/) for the first time. It was also around that time when I first started playing CTFs, a hobby that has since grown into a pretty competitive sport for me. 
+While I had prior experience in programming and Computer Science, my first encounter with red teaming came in January, when I decided to try out [TryHackMe](https://tryhackme.com) for the first time. It was also around that time when I first started playing CTFs, a hobby that has since grown into a pretty competitive sport for me. 
 
 ### Recommendation: TryHackMe
 
@@ -28,13 +28,13 @@ If you're like me and just starting out in this field, I highly recommend TryHac
 
 Here are the rooms I did:
 
-![TryHackMe Rooms](../.gitbook/assets/screenshot-2021-07-11-at-8.32.41-pm.png)
+![TryHackMe Rooms](<../.gitbook/assets/Screenshot 2021-07-11 at 8.32.41 PM.png>)
 
-Start with the easy rooms like Vulnversity \(which will take you through the basics of pentesting methodology\), then as you get more comfortable, try to take on rooms like Mr. Robot CTF and perform a full "pentest". You can always watch the walkthroughs if you get stuck - don't worry about referring to hints and reading walkthroughs at this early stage in your learning. What's important here is not really the technical skills, but rather getting a feel for the _methodology_ and _process_ of performing a penetration test.
+Start with the easy rooms like Vulnversity (which will take you through the basics of pentesting methodology), then as you get more comfortable, try to take on rooms like Mr. Robot CTF and perform a full "pentest". You can always watch the walkthroughs if you get stuck - don't worry about referring to hints and reading walkthroughs at this early stage in your learning. What's important here is not really the technical skills, but rather getting a feel for the _methodology_ and _process_ of performing a penetration test.
 
 ### Recommendation: eLearnSecurity PTS / eJPT
 
-After doing a few TryHackMe rooms, I got really interested in red teaming \(although at the time, it still seemed rather alien to me\). I wanted to learn more, but didn't necessarily want to jump straight into OSCP just yet. I came across the eJPT certification, which was the certification for eLearnSecurity's Penetration Testing Student \(PTS\) course. 
+After doing a few TryHackMe rooms, I got really interested in red teaming (although at the time, it still seemed rather alien to me). I wanted to learn more, but didn't necessarily want to jump straight into OSCP just yet. I came across the eJPT certification, which was the certification for eLearnSecurity's Penetration Testing Student (PTS) course. 
 
 **The course is free**, but you can get certified for $200 if you want.
 
@@ -47,11 +47,11 @@ The course teaches you all the basics:
 * Simple web exploitation using Burp Suite
 * Using Metasploit for exploiting known vulnerabilities
 
-Most importantly, it makes sure you fully understand the penetration testing **methodology**. It is **not** __a technically demanding certification at all - in fact, there are no restrictions on auto-exploiters like Metasploit and SQLMap, which the OSCP exam forbids.
+Most importantly, it makes sure you fully understand the penetration testing **methodology**. It is **not**_ _a technically demanding certification at all - in fact, there are no restrictions on auto-exploiters like Metasploit and SQLMap, which the OSCP exam forbids.
 
 I passed the certification on the 29th of January, a few weeks after I started the course.
 
-![eJPT Certificate](../.gitbook/assets/ejpt-certificate.jpg)
+![eJPT Certificate](<../.gitbook/assets/eJPT Certificate.jpg>)
 
 ### Misc
 
@@ -61,7 +61,7 @@ Even after passing the eJPT, I was equally clueless - CTF challenges are much mo
 
 The key thing with CTFs is to never give up. It definitely feels demoralizing not being able to solve any challenges, but the process of googling vulnerabilities and exploiting them is exactly what you would need going into something like OSCP. As I participated in more and more CTF competitions, I eventually got better at them and drew connections between new challenges and past challenges I've solved. 
 
-I'm quite proud of my team, Social Engineering Experts, which came from \(mostly\) 0 and went on to win prizes for a local CTF and come quite close to winning some international CTFs as well.
+I'm quite proud of my team, Social Engineering Experts, which came from (mostly) 0 and went on to win prizes for a local CTF and come quite close to winning some international CTFs as well.
 
 ## PWK Course
 
@@ -71,7 +71,7 @@ In mid-February, I decided to sign up for the PWK course.
 
 You can get 5 bonus points for the OSCP exam if you complete **all** course exercises accurately and submit a lab report documenting the course exercises and 10 lab machines.
 
-Personally, I do **not** think this is worth the effort. For the first few weeks, I tried to work through the course material and aimed to complete all the course exercises. **It was simply too time-consuming** and that time could have been used more productively pwning lab machines. Eventually, I gave up on it.
+Personally, I do **not **think this is worth the effort. For the first few weeks, I tried to work through the course material and aimed to complete all the course exercises. **It was simply too time-consuming** and that time could have been used more productively pwning lab machines. Eventually, I gave up on it.
 
 To a certain degree, the 5 bonus points do help. You could run through the outcomes - there are plenty in which you end up with 65 points. In fact, on my passing attempt, I was initially at 65 points and stuck on the 25 point machine that would eventually secure my points to pass. If you are stuck on 65 points, the 5 bonus points could be the difference between passing and failing the exam.
 
@@ -127,7 +127,7 @@ Some machines are user-submitted, while the rest are made by Offsec. Some of the
 
 #### The Verdict
 
-This was one of my best purchases, hands down. It was only $20 a month, and I subscribed for 2 months. During this time I did ~30 boxes, and I'm highly certain that this is what contributed to me being able to pass the exam the second time around.
+This was one of my best purchases, hands down. It was only $20 a month, and I subscribed for 2 months. During this time I did \~30 boxes, and I'm highly certain that this is what contributed to me being able to pass the exam the second time around.
 
 ### Other Resources
 
@@ -136,13 +136,13 @@ Some helpful resources that I found myself regularly referring to:
 * [PayloadsAllTheThings Reverse Shell Cheatsheet](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md): Use a payload from here when you discover an RCE vulnerability.
 * [HackTricks](https://book.hacktricks.xyz): When you are dealing with unfamiliar protocols, HackTricks probably has a checklist for you.
 
-![](../.gitbook/assets/screenshot-2021-07-11-at-9.39.24-pm.png)
+![](<../.gitbook/assets/Screenshot 2021-07-11 at 9.39.24 PM.png>)
 
-* [ExploitDB](https://www.exploit-db.com/): Pretty much all the CVEs you come across during the PWK labs will have an exploit on here.
+* [ExploitDB](https://www.exploit-db.com): Pretty much all the CVEs you come across during the PWK labs will have an exploit on here.
 
-![](../.gitbook/assets/screenshot-2021-07-11-at-9.44.45-pm.png)
+![](<../.gitbook/assets/Screenshot 2021-07-11 at 9.44.45 PM.png>)
 
-* [GTFOBins](https://gtfobins.github.io/): When performing Linux privilege escalation, you will likely find yourself referring to this for SUID and Sudo misconfiguration exploits.
+* [GTFOBins](https://gtfobins.github.io): When performing Linux privilege escalation, you will likely find yourself referring to this for SUID and Sudo misconfiguration exploits.
 * [LinPEAS and WinPEAS](https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite): Great for privilege escalation enumeration, but don't forget your basics!
 * [Transferring Files from Linux to Windows](https://blog.ropnop.com/transferring-files-from-kali-to-windows/): Make sure you know this.
 * [Upgrading Netcat Shell with Python](https://zsecure.uk/guides/upgrade-nc-shell-with-python-3/): Make sure you know this.
@@ -153,22 +153,22 @@ Some helpful resources that I found myself regularly referring to:
 
 My first attempt at the exam, on the 28th of April, was not great - I only managed to get 35 out of the 70 required points to pass. It was definitely demoralizing, but this attempt made me realise several gaps in my methodology, particularly my enumeration strategy.
 
-For the next two months, I worked on Proving Grounds boxes, while continuing to juggle my other commitments, including my CTF team \(during this time, we did quite a few CTFs, including Pwn2Win, a DEFCON qualifier\).
+For the next two months, I worked on Proving Grounds boxes, while continuing to juggle my other commitments, including my CTF team (during this time, we did quite a few CTFs, including Pwn2Win, a DEFCON qualifier).
 
 ### Second Attempt
 
 This time, I made sure it was different.
 
 * I stopped over-relying on automatic enumeration scripts, and instead made sure I understood what I was enumerating.
-* I took note of all the times I got stuck. After referring to hints and figuring out the correct techniques, I added the technique to a "Troubleshooting Checklist" I made for myself. I'm not sharing this here because I'm not a huge fan of following other people's checklists. This checklist worked for me precisely because it was filling in _my_ gaps in knowledge**.**
-* I improved my note-taking strategy. I used [Joplin](https://joplinapp.org/) to easily take notes in Markdown, and structured my notes so that I covered every service running on the machine - no gaps this time.
+* I took note of all the times I got stuck. After referring to hints and figuring out the correct techniques, I added the technique to a "Troubleshooting Checklist" I made for myself. I'm not sharing this here because I'm not a huge fan of following other people's checklists. This checklist worked for me precisely because it was filling in _my _gaps in knowledge**.**
+* I improved my note-taking strategy. I used [Joplin](https://joplinapp.org) to easily take notes in Markdown, and structured my notes so that I covered every service running on the machine - no gaps this time.
 * The day before the exam, I reviewed the notes I took on each of my practice machines. I took note of how I enumerated and found the initial foothold, and how I found the privilege escalation vector.
 
 My second attempt was on 6th July - this time, I managed to root all but one of the boxes and achieved 90 points.
 
 Less than 24 hours after I submitted my exam report, I received confirmation that I have passed the exam. I'm officially an OSCP.
 
-![OSCP Certificate](../.gitbook/assets/offensive_security_certified_professional__oscp__badge20210708-58-18xyxs1.jpg)
+![OSCP Certificate](../.gitbook/assets/Offensive_Security_Certified_Professional\_\_OSCP\_\_Badge20210708-58-18xyxs1.jpg)
 
 ## Misc Tips
 
@@ -178,17 +178,17 @@ Don't underestimate this. You've spent 24 hours pwning the boxes - make sure you
 
 I used [whoisflynn's template](https://github.com/noraj/OSCP-Exam-Report-Template-Markdown/blob/master/src/OSCP-exam-report-template_whoisflynn_v3.2.md), but modified it slightly for my style of reporting. For the styling, I used [chvancooten's template](https://github.com/chvancooten/OSCP-MarkdownReportingTemplates) to generate neat-looking reports from the Markdown document.
 
-![Example Report](../.gitbook/assets/screenshot-2021-07-11-at-11.21.18-pm.png)
+![Example Report](<../.gitbook/assets/Screenshot 2021-07-11 at 11.21.18 PM.png>)
 
 When working on the machines, screenshot every major milestone. **Make sure that someone else can easily replicate the attack by following your screenshots**. If it's clear and easily replicable, I bet that Offsec would have a much easier time grading your report too. If you miss out details in your report, Offsec may have to ask you for additional information etc., which can slow down the grading process or even result in a fail.
 
 ### During the Exam
 
-**Remember to take breaks.** I cannot stress this enough. I found that taking breaks and walking out of my room often cleared up my mind and helped me to make better progress when I returned. If you've been stuck for 1 to 2 hours, I'd advise you to go for a walk and come back refreshed.
+**Remember to take breaks. **I cannot stress this enough. I found that taking breaks and walking out of my room often cleared up my mind and helped me to make better progress when I returned. If you've been stuck for 1 to 2 hours, I'd advise you to go for a walk and come back refreshed.
 
-**Get sufficient rest.** I factored in 4 hours of sleep during the exam. I slept for 4 hours, then woke up early in the morning to complete the exam. Those 4 hours of sleep helped a lot. At that point, I was at 65 points and stuck with the initial foothold for the 25 point machine. It was midnight and I was tired from racking my brains all day. I probably spent 3-4 hours on that machine with no progress. When I woke up the next morning, I realised I've missed something rather trivial - I got the full 25 points less than an hour later.
+**Get sufficient rest. **I factored in 4 hours of sleep during the exam. I slept for 4 hours, then woke up early in the morning to complete the exam. Those 4 hours of sleep helped a lot. At that point, I was at 65 points and stuck with the initial foothold for the 25 point machine. It was midnight and I was tired from racking my brains all day. I probably spent 3-4 hours on that machine with no progress. When I woke up the next morning, I realised I've missed something rather trivial - I got the full 25 points less than an hour later.
 
-**Be wary of rabbit holes.** Just because you find an exploit for it doesn't mean it's exploitable. Make sure you understand which conditions make the service exploitable. Have a mental checklist of what to do when encountering common services like FTP - if you've run through the entire checklist and nothing's there, then nothing's there. Stop yourself when you find yourself running the same commands over and over again expecting to find something new.
+**Be wary of rabbit holes. **Just because you find an exploit for it doesn't mean it's exploitable. Make sure you understand which conditions make the service exploitable. Have a mental checklist of what to do when encountering common services like FTP - if you've run through the entire checklist and nothing's there, then nothing's there. Stop yourself when you find yourself running the same commands over and over again expecting to find something new.
 
 ## Post-Exam
 
@@ -196,11 +196,10 @@ I'm glad that this chapter of my life has finally come to a satisfying conclusio
 
 Perhaps the best thing I've gained from this is that hacking no longer feels like a mystery to me. It is certainly not what it looks like on TV:
 
-![Castle \(TV Series\)](../.gitbook/assets/screenshot-2021-07-11-at-11.30.08-pm.png)
+![Castle (TV Series)](<../.gitbook/assets/Screenshot 2021-07-11 at 11.30.08 PM.png>)
 
 To be honest, I don't feel much different now that I have the certification. The course has taught me a lot, and I've seen my skills improve in not just the OSCP exam, but also in CTFs and understanding the mindset of an attacker in general. If I had failed again, at the very least I would know that I've improved a lot since my last attempt.
 
-More importantly, I'm finally finding myself less busy, with one less commitment off my table. I will probably take a good break, focus on other equally important things in my life \(such as family and friends\) for a bit, and then come back again for either the OSWE or OSED next year.
+More importantly, I'm finally finding myself less busy, with one less commitment off my table. I will probably take a good break, focus on other equally important things in my life (such as family and friends) for a bit, and then come back again for either the OSWE or OSED next year.
 
 That's all for now. All the best if you're taking, or planning to take the OSCP!
-

