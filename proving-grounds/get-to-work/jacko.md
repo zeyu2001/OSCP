@@ -40,7 +40,7 @@ The default credentials `sa:` worked. Here we can run SQL queries.
 
 However, further enumeration found nothing much interesting in the database.
 
-We see the version of the product (H2 1.4.199). This version suffers from an RCE vulnerability.
+We see the version of the product \(H2 1.4.199\). This version suffers from an RCE vulnerability.
 
 ![](../../.gitbook/assets/b79123062d834793a967f0c26b95e917.png)
 
@@ -48,7 +48,7 @@ Reference: [https://www.exploit-db.com/exploits/49384](https://www.exploit-db.co
 
 If we execute the following SQL statements:
 
-```
+```text
 -- Write native library
 SELECT CSVWRITE('C:\Windows\Temp\JNIScriptEngine.dll', CONCAT('SELECT NULL "', CHAR(0x4d),CHAR(0x5a),CHAR(0x90), ... ,CHAR(0x00),CHAR(0x00),CHAR(0x00),CHAR(0x00),'"'), 'ISO-8859-1', '', '', '', '', '');
 
@@ -89,7 +89,7 @@ Receiving the reverse shell:
 
 ![](../../.gitbook/assets/364a758bbb304e99aaf1488d22bc523f.png)
 
-![](<../../.gitbook/assets/4efd57e982134262906d2d5ba26b4385 (1).png>)
+![](../../.gitbook/assets/4efd57e982134262906d2d5ba26b4385.png)
 
 ### Privilege Escalation
 
@@ -166,3 +166,4 @@ The exploit works and we received a SYSTEM shell.
 ![](../../.gitbook/assets/ff7dd418cef0408e81323e49bafb1249.png)
 
 ![](../../.gitbook/assets/34ee540f2df94dcaaae6914ef1baa47e.png)
+

@@ -30,7 +30,7 @@ The `.htaccess` and `.htpasswd` files are leaked.
 
 .htaccess
 
-```
+```text
 AuthName "Qui e nuce nuculeum esse volt, frangit nucem!"
 AuthType Basic
 AuthUserFile c:\\wamp\www\.htpasswd
@@ -41,7 +41,7 @@ Require valid-user
 
 .htpasswd
 
-```
+```text
 offsec:$apr1$oRfRsc/K$UpYpplHDlaemqseM39Ugg0
 ```
 
@@ -49,7 +49,7 @@ Passing the `.htpasswd` hash into John the Ripper, we find the credentials to au
 
 ![](../../.gitbook/assets/bfb9cc2aaeab49158478a651a9d8a10d.png)
 
-![](../../.gitbook/assets/2cd7d80a55de4d43a0b44df1f215b49c.png)
+![](../../.gitbook/assets/2cd7d80a55de4d43a0b44df1f215b49c%20%281%29.png)
 
 ### RDP
 
@@ -63,7 +63,7 @@ Passing the `.htpasswd` hash into John the Ripper, we find the credentials to au
 
 ![](../../.gitbook/assets/a13f5f2be1f74edcb940d14977663974.png)
 
-Using the previously found credentials (`offsec:elite`), we can authenticate into the application.
+Using the previously found credentials \(`offsec:elite`\), we can authenticate into the application.
 
 ![](../../.gitbook/assets/f8c64ee6bb2540ba95059dc4d09f9328.png)
 
@@ -112,7 +112,7 @@ However, there are two challenges.
 
 ![](../../.gitbook/assets/c030a1ac33394a86ba17426d70dd3e14.png)
 
-We can use one of the BITS CSLIDs from here: [https://github.com/ohpe/juicy-potato/tree/master/CLSID/Windows_Server\_2008\_R2\_Enterprise](https://github.com/ohpe/juicy-potato/tree/master/CLSID/Windows_Server\_2008\_R2\_Enterprise). I used `{F7FD3FD6-9994-452D-8DA7-9A8FD87AEEF4}`.
+We can use one of the BITS CSLIDs from here: [https://github.com/ohpe/juicy-potato/tree/master/CLSID/Windows\_Server\_2008\_R2\_Enterprise](https://github.com/ohpe/juicy-potato/tree/master/CLSID/Windows_Server_2008_R2_Enterprise). I used `{F7FD3FD6-9994-452D-8DA7-9A8FD87AEEF4}`.
 
 ![](../../.gitbook/assets/fe5b98fc281e4f108da259928e60e839.png)
 
@@ -127,3 +127,4 @@ On our listening machine:
 ![](../../.gitbook/assets/ab393a6a63df465e8439202e42aa018e.png)
 
 ![](../../.gitbook/assets/51120c1f70f14bfa92f41d88bb66a50d.png)
+

